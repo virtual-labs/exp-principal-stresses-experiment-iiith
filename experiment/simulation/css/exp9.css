@@ -1,0 +1,261 @@
+#exp_container {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+}
+#final{
+    position: absolute;
+    top:450px;
+    left:1000px;
+}
+#bxx{
+    position: absolute;
+    top:100px;
+    left:100px;    
+}
+#bxy{
+    position: absolute;
+    top:100px;
+    left:300px;    
+}
+#bxz{
+    position: absolute;
+    top:100px;
+    left:500px;    
+}
+#byx{        
+    position: absolute;
+    top:200px;
+    left:100px;    
+}
+
+#byy{
+    position: absolute;
+    top:200px;
+    left:300px;    
+}
+#byz{
+    position: absolute;
+    top:200px;
+    left:500px;    
+}
+#bzx{
+    position: absolute;
+    top:300px;
+    left:100px;    
+}
+#bzy{
+        position: absolute;
+        top:300px;
+        left:300px;
+    }
+#bzz{
+    position: absolute;
+    top:300px;
+    left:500px;    
+}    
+#myRangeXX
+{
+position: absolute;
+top: 550px;
+left: 200px;
+}
+#myRangeXY
+{
+position: absolute;
+top: 550px;
+left: 400px;
+}
+#myRangeXZ
+{
+position: absolute;
+top: 550px;
+left: 600px;
+}
+#myRangeYX
+{
+position: absolute;
+top: 650px;
+left: 200px;
+}
+#myRangeYY
+{
+position: absolute;
+top: 650px;
+left: 400px;
+}
+#myRangeYZ
+{
+position: absolute;
+top: 650px;
+left: 600px;
+}
+#myRangeZX
+{
+position: absolute;
+top: 750px;
+left: 200px;
+}
+#myRangeZY
+{
+position: absolute;
+top: 750px;
+left: 400px;
+}
+#myRangeZZ
+{
+position: absolute;
+top: 750px;
+left: 600px;
+}
+#myRangeX
+{
+position: absolute;
+top: 550px;
+left: 800px;
+}
+#myRangeY
+{
+position: absolute;
+top: 650px;
+left: 800px;
+}
+#myRangeZ
+{
+position: absolute;
+top: 750px;
+left: 800px;
+}
+#xx
+{
+position:absolute;
+top:500px;
+left:200px;
+}
+#xy
+{
+position:absolute;
+top:500px;
+left:400px;
+}
+#xz
+{
+position:absolute;
+top:500px;
+left:600px;
+}
+#yx
+{
+position:absolute;
+top:600px;
+left:200px;
+}
+#yy
+{
+position:absolute;
+top:600px;
+left:400px;
+}
+#yz
+{
+position:absolute;
+top:600px;
+left:600px;
+}
+#zx
+{
+position:absolute;
+top:700px;
+left:200px;
+}
+#zy
+{
+position:absolute;
+top:700px;
+left:400px;
+}
+#zz
+{
+position:absolute;
+top:700px;
+left:600px;
+}
+#x
+{
+    position: absolute;
+    top:500px;
+    left:800px;
+}
+#y
+{
+    position: absolute;
+    top:600px;
+    left:800px;
+}
+#z
+{
+    position: absolute;
+    top:700px;
+    left:800px;
+}
+#dxx
+{
+position:absolute;
+top:500px;
+left:1090px;
+}
+#dxy
+{
+position:absolute;
+top:500px;
+left:1290px;
+}
+#dxz
+{
+position:absolute;
+top:500px;
+left:1490px;
+}
+#dyx
+{
+position:absolute;
+top:600px;
+left:1090px;
+}
+#dyy
+{
+position:absolute;
+top:600px;
+left:1290px;
+}
+#dyz
+{
+position:absolute;
+top:600px;
+left:1490px;
+}
+#dzx
+{
+position:absolute;
+top:700px;
+left:1090px;
+}
+#dzy
+{
+position:absolute;
+top:700px;
+left:1290px;
+}
+#dzz
+{
+position:absolute;
+top:700px;
+left:1490px;
+}
+#mp
+{
+    position: absolute;
+    left:550px;
+    top:800px; 
+    font-size: 45px;
+}

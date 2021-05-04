@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+    <link href="css/exp9.css" rel="stylesheet"/>
+</head>
+
+
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
+    <p id="mp">PRINCIPAL STRESSES EXPERIMENT</p>
+	<div id="final">
+	<button id="bxx">0</button>
+	<button id="bxy">0</button>
+	<button id="bxz">0</button>
+	<button id="byx">0</button>
+	<button id="byy">0</button>
+	<button id="byz">0</button>
+	<button id="bzx">0</button>
+	<button id="bzy">0</button>
+	<button id="bzz">0</button>
+    </div>
+    <script src="js/2.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/1.js"></script>
+	<div class="slidecontainer">
+    <input class="sliderXX" id="myRangeXX" max="50" min="-50" type="range" value="0"/>
+    <input class="sliderXY" id="myRangeXY" max="50" min="-50" type="range" value="0"/>
+    <input class="sliderXZ" id="myRangeXZ" max="50" min="-50" type="range" value="0"/>
+    <input class="sliderYX" id="myRangeYX" max="50" min="-50" type="range" value="0"/>
+    <input class="sliderYY" id="myRangeYY" max="50" min="-50" type="range" value="0"/>
+    <input class="sliderYZ" id="myRangeYZ" max="50" min="-50" type="range" value="0"/>
+    <input class="sliderZX" id="myRangeZX" max="50" min="-50" type="range" value="0"/>
+    <input class="sliderZY" id="myRangeZY" max="50" min="-50" type="range" value="0"/>
+    <input class="sliderZZ" id="myRangeZZ" max="50" min="-50" type="range" value="0"/>
+    <input class="sliderX" id="myRangeX" max="360" min="0" type="range" value="0"/>
+    <input class="sliderY" id="myRangeY" max="360" min="0" type="range" value="0"/>
+    <input class="sliderZ" id="myRangeZ" max="360" min="0" type="range" value="0"/>
+    <p id="x">ThetaX: <span id="demoX"></span></p>   
+    <p id="y">ThetaY: <span id="demoY"></span></p>
+    <p id="z">ThetaZ: <span id="demoZ"></span></p>
+    <p id="xx">SigmaXX: <span id="demoXX"></span></p>   
+    <p id="xy">SigmaXY: <span id="demoXY"></span></p>
+    <p id="xz">SigmaXZ: <span id="demoXZ"></span></p>
+    <p id="yx">SigmaYX: <span id="demoYX"></span></p>
+    <p id="yy">SigmaYY: <span id="demoYY"></span></p>
+    <p id="yz">SigmaYZ: <span id="demoYZ"></span></p>
+    <p id="zx">SigmaZX: <span id="demoZX"></span></p>
+    <p id="zy">SigmaZY: <span id="demoZY"></span></p>
+    <p id="zz">SigmaZZ: <span id="demoZZ"></span></p>
+    <p id="dxx">Sigma'XX</p>
+    <p id="dxy">Sigma'XY</p>
+    <p id="dxz">Sigma'XZ</p>
+    <p id="dyx">Sigma'YX</p>
+    <p id="dyy">Sigma'YY</p>
+    <p id="dyz">Sigma'YZ</p>
+    <p id="dzx">Sigma'ZX</p>
+    <p id="dzy">Sigma'ZY</p>
+    <p id="dzz">Sigma'ZZ</p>    
+<script>
+    	var axx=0;
+    	var axy=0;
+    	var axz=0;
+    	var ayx=0;
+    	var ayy=0;
+    	var ayz=0;
+    	var azx=0;
+    	var azy=0;
+    	var azz=0;
+        var lx=0;
+        var ly=0;
+        var lz=0;
+         
+        
+        var sliderXX = document.getElementById("myRangeXX");
+        var outputXX = document.getElementById("demoXX");
+        sliderXX.oninput = function() {
+                        outputXX.innerHTML = this.value;
+                                  axx=this.value;  
+                                  animate(lx,ly,lz);
+                                  calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                                    }
+
+       	var sliderYY = document.getElementById("myRangeYY");
+        var outputYY = document.getElementById("demoYY");
+        sliderYY.oninput = function() {
+                        outputYY.innerHTML = this.value;
+                                    ayy=this.value;  
+                                    animate(lx,ly,lz);
+                                    calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                                    }
+
+        var sliderZZ = document.getElementById("myRangeZZ");
+        var outputZZ = document.getElementById("demoZZ");
+        sliderZZ.oninput = function() {
+                        outputZZ.innerHTML = this.value;
+                                    azz=this.value;  
+                                   animate(lx,ly,lz);
+                                    calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                                	}
+                                                                
+        var sliderYX = document.getElementById("myRangeYX");
+        var outputYX = document.getElementById("demoYX");
+        var sliderXY = document.getElementById("myRangeXY");
+        var outputXY = document.getElementById("demoXY");
+        sliderXY.oninput = function() {
+                        outputXY.innerHTML = this.value;
+                        outputYX.innerHTML = this.value;
+                    	axy=this.value;
+                    	ayx=this.value;    
+                    	animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                    	}
+		sliderYX.oninput = function() {
+                        outputXY.innerHTML = this.value;
+                        outputYX.innerHTML = this.value;
+                    	ayx=this.value;
+                    	axy=this.value;
+                        animate(lx,ly,lz);
+                    	calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                    	}
+        var sliderZX = document.getElementById("myRangeZX");
+        var outputZX = document.getElementById("demoZX");            					         													
+        var sliderXZ = document.getElementById("myRangeXZ");
+        var outputXZ = document.getElementById("demoXZ");
+        sliderXZ.oninput = function() {
+                        outputXZ.innerHTML = this.value;
+                        outputZX.innerHTML = this.value;	
+                        axz=this.value;
+                    	azx=this.value;
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                        }                
+        sliderZX.oninput = function() {
+        				outputXZ.innerHTML = this.value;
+                        outputZX.innerHTML = this.value;
+                        azx=this.value;
+                    	axz=this.value;
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                        }                  
+    	var sliderZY = document.getElementById("myRangeZY");
+        var outputZY = document.getElementById("demoZY");            					         													
+        var sliderYZ = document.getElementById("myRangeYZ");
+        var outputYZ = document.getElementById("demoYZ");
+        sliderYZ.oninput = function() {
+                        outputYZ.innerHTML = this.value;
+                        outputZY.innerHTML = this.value;	
+                        ayz=this.value;
+                    	azy=this.value;
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                        }                
+        sliderZY.oninput = function() {
+        				outputYZ.innerHTML = this.value;
+                        outputZY.innerHTML = this.value;
+                        azy=this.value;
+                    	ayz=this.value;
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                        }
+       var sliderX = document.getElementById("myRangeX");
+        var outputX = document.getElementById("demoX");
+        sliderX.oninput = function() {
+                        outputX.innerHTML = this.value;
+                        lx=this.value;         
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);
+                                    }
+       
+        var sliderY = document.getElementById("myRangeY");
+        var outputY = document.getElementById("demoY");
+        sliderY.oninput = function() {
+                        outputY.innerHTML = this.value;
+                        ly=this.value;         
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);}                                          
+         
+        var sliderZ = document.getElementById("myRangeZ");
+        var outputZ = document.getElementById("demoZ");
+        sliderZ.oninput = function() {
+                        outputZ.innerHTML = this.value;
+                        lz=this.value;         
+                        animate(lx,ly,lz);
+                        calc(axx,axy,axz,ayx,ayy,ayz,azx,azy,azz,lx,ly,lz);} 
+
+
+    </script>
+</div> 
+
+</body></html>
