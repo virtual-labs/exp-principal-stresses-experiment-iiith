@@ -1,0 +1,41 @@
+{
+    "version": 2.0,
+    "questions": [{
+            "question": "A principal plane is a plane of",
+            "answers": {
+                "a": "Only normal stress",
+                "b": "Only shear stress",
+                "c": "Only bending stress",
+                "d": "None"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Maximum shear stress is",
+            "answers": {
+                "a": "Average sum of principal stresses",
+                "b": "Average difference of principal stresses",
+                "c": "Average sum as well as difference of principal stresses",
+                "d": "None"
+            },
+            "explanations": {
+                "b": "Shear Stress is given by <br> (1/2)[((σ<sub>x</sub> - σ<sub>y</sub>)<sup>2</sup>) + 4τ<sup>2</sup>)<sup>0.5</sup>] <br> For Maximum shear stress, τ = 0,σ<sub>x</sub> = σ<sub>1</sub> , σ<sub>y</sub> = σ<sub>2</sub> <br> Hence  (1/2)[σ<sub>1</sub> - σ<sub>2</sub>]"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "A complementary shear stress is equal in magnitude and opposite in rotational tendency of an applied",
+            "answers": {
+                "a": "Tensile stress",
+                "b": "Compressive stress",
+                "c": "Shear stress",
+                "d": "None of the above"
+            },
+            "correctAnswer": "c",
+            "difficulty": "advanced"
+        }
+
+    ]
+}

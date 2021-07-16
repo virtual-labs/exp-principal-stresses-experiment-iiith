@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="css/exp9.css">
-</head>
-<body>
-		<a href="exp9.html" target="_blank">Go to Virtual lab on Principal Stresses Experiment(Click here)</a>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css" />
+</head>
+
+<body>
+    <div class="columns is-centered">
+        <div class="column has-text-centered is-half">
+            <div id="scene3d">
+            </div>
+        </div>
+    </div>
+    <div class="columns is-centered">
+        <div class="column has-text-centered is-half is-narrow">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <p>σ<sub>xx</sub> : <span id="demoXX">0</span></p>
+                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXX">
+                    <p>σ<sub>yx</sub> : <span id="demoYX">0</span></p>
+                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYX">
+                    <p>σ<sub>zx</sub> : <span id="demoZX">0</span></p>
+                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZX">
+                </div>
+                <div class="column has-text-centered">
+                    <p>σ<sub>xy</sub> : <span id="demoXY">0</span></p>
+                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXY">
+                    <p>σ<sub>yy</sub> : <span id="demoYY">0</span></p>
+                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYY">
+                    <p>σ<sub>zy</sub> : <span id="demoZY">0</span></p>
+                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZY">
+                </div>
+                <div class="column has-text-centered">
+                    <p>σ<sub>xz</sub> : <span id="demoXZ">0</span></p>
+                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXZ">
+                    <p>σ<sub>yz</sub> : <span id="demoYZ">0</span></p>
+                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYZ">
+                    <p>σ<sub>zz</sub> : <span id="demoZZ">0</span></p>
+                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZZ">
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <p>Θ<sub>x</sub> : <span id="demoX">0</span></p>
+                    <input type="range" min="0" max="360" value="0" class="slider" id="myRangeX">
+                </div>
+                <div class="column has-text-centered">
+                    <p>Θ <sub>y</sub> : <span id="demoY">0</span></p>
+                    <input type="range" min="0" max="360" value="0" class="slider" id="myRangeY">
+                </div>
+                <div class="column has-text-centered">
+                    <p>Θ<sub>z</sub> : <span id="demoZ">0</span></p>
+                    <input type="range" min="0" max="360" value="0" class="slider" id="myRangeZ">
+                </div>
+            </div>
+            <div class="v-table-wrap">
+                <table class="table is-bordered v-table-primary">
+                    <thead>
+                        <tr>
+                            <th>σ'</th>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>Z</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>X</th>
+                            <td id="bxx">0</td>
+                            <td id="bxy">0</td>
+                            <td id="bxz">0</td>
+                        </tr>
+                        <tr>
+                            <th>Y</th>
+                            <td id="byx">0</td>
+                            <td id="byy">0</td>
+                            <td id="byz">0</td>
+                        </tr>
+                        <tr>
+                            <th>Z</th>
+                            <td id="bzx">0</td>
+                            <td id="bzy">0</td>
+                            <td id="bzz">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/three.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
