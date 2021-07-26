@@ -31,6 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     scene3d.appendChild(renderer.domElement);
     renderer.render(scene, camera);
+    const tableData = [
+        { "σ'": "X", "X": "0", "Y": "0", "Z": "0" },
+        { "σ'": "X", "X": "0", "Y": "0", "Z": "0" },
+        { "σ'": "X", "X": "0", "Y": "0", "Z": "0" },
+    ];
+
+    generateTableHead(table, Object.keys(tableData[0]));
+    generateTable(table, tableData);
 
     function animate(a, b, c) {
 
@@ -59,6 +67,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         return result;
     }
+
+    function generateTableHead(table, data) {
+        let thead = table.createTHead();
+        let row = thead.insertRow();
+        data.forEach(function(key, ind) {
+            let th = document.createElement("th");
+            th.innerHTML = key;
+            row.appendChild(th);
+        });
+    };
+
+    function generateTable(table, data) {
+        data.forEach(function(rowVals, ind) {
+            let row = table.insertRow();
+            Object.keys(rowVals).forEach(function(key, i) {
+                let cell = row.insertCell();
+                cell.innerHTML = rowVals[key];
+            });
+        });
+    };
 
     function calc(input) {
         const sinx = Math.sin(Math.PI / 180 * input[9]);
@@ -91,15 +119,15 @@ document.addEventListener('DOMContentLoaded', function() {
         sigma.push([input[7], input[8], input[2]]);
         principalSigma = matMult(matMult(rho, sigma), final);
 
-        document.getElementById("bxx").innerHTML = principalSigma[0][0].toPrecision(10);
-        document.getElementById("bxy").innerHTML = principalSigma[0][1].toPrecision(10);
-        document.getElementById("bxz").innerHTML = principalSigma[0][2].toPrecision(10);
-        document.getElementById("byx").innerHTML = principalSigma[1][0].toPrecision(10);
-        document.getElementById("byy").innerHTML = principalSigma[1][1].toPrecision(10);
-        document.getElementById("byz").innerHTML = principalSigma[1][2].toPrecision(10);
-        document.getElementById("bzx").innerHTML = principalSigma[2][0].toPrecision(10);
-        document.getElementById("bzy").innerHTML = principalSigma[2][1].toPrecision(10);
-        document.getElementById("bzz").innerHTML = principalSigma[2][2].toPrecision(10);
+
+        const tableData = [
+            { "σ'": "X", "X": principalSigma[0][0].toPrecision(10), "Y": principalSigma[0][1].toPrecision(10), "Z": principalSigma[0][2].toPrecision(10) },
+            { "σ'": "X", "X": principalSigma[1][0].toPrecision(10), "Y": principalSigma[1][1].toPrecision(10), "Z": principalSigma[1][2].toPrecision(10) },
+            { "σ'": "X", "X": principalSigma[2][0].toPrecision(10), "Y": principalSigma[2][1].toPrecision(10), "Z": principalSigma[2][2].toPrecision(10) },
+        ];
+        table.innerHTML = "";
+        generateTableHead(table, Object.keys(tableData[0]));
+        generateTable(table, tableData);
     }
 
     let input = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
