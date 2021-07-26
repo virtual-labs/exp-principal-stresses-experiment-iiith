@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth / 3, window.innerHeight / 3);
+
+    renderer.domElement.style = "display: inline";
+    console.log(renderer.domElement);
     document.body.appendChild(renderer.domElement);
 
     //Cube
