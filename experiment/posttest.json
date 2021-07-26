@@ -1,7 +1,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "If a body is subjected to stresses in xy plane with stresses of 60N/mm<sup>2</sup> and 80N/mm<sup>2</sup> acting along x and y axes respectively. Also the shear stress acting is 20N/mm<sup>2</sup>. Find the minimum normal stress.",
+            "question": "A body is subjected to stresses in XY plane with stresses of 60N/mm<sup>2</sup> and 80N/mm<sup>2</sup> acting along X and Y axes respectively. Also the shear stress acting is 20N/mm<sup>2</sup>. Find the minimum normal stress.",
             "answers": {
                 "a": "45.4",
                 "b": "47.6",
@@ -9,13 +9,13 @@
                 "d": "50.6"
             },
             "explanations": {
-                "b": "Minimum normal stress is given by : <br>  σ = [σ(x) +σ(y)]/2 – √( [σ(x)-σ(y) ]<sup>2</sup>/2<sup>2</sup> + τ<sup>2</sup>)"
+                "b": "Minimum normal stress is given by: <br>  σ = [σ(X) + σ(Y)]/2 - √ ([σ(X)-σ(Y)]<sup>2</sup>/2<sup>2</sup> + τ<sup>2</sup>)"
             },
             "correctAnswer": "b",
             "difficulty": "advanced"
         },
         {
-            "question": "If a body is subjected to stresses in xy plane with stresses of 60N/mm<sup>2</sup> and 80N/mm<sup>2</sup> acting along x and y axes respectively. Also the shear stress acting is 10N/mm<sup>2</sup>. Find the inclination of the plane in which shear stress is maximum. ",
+            "question": "A body is subjected to stresses in XY plane with stresses of 60N/mm<sup>2</sup> and 80N/mm<sup>2</sup> acting along X and Y axes respectively. Also the shear stress acting is 10N/mm<sup>2</sup>. Find the inclination of the plane for which shear stress is maximum. ",
             "answers": {
                 "a": "45'",
                 "b": "30'",
@@ -23,7 +23,10 @@
                 "d": "15'"
             },
             "explanations": {
-                "a": "Inclination(Ǿ) is given by : <br> tan(2Ǿ) = 2τ/[σ(x) – σ(y)]."
+                "a": "Inclination(Ǿ) is given by: <br> tan(2Ǿ) = 2τ/[σ(X) – σ(Y)].",
+                "b": "Inclination(Ǿ) is given by: <br> tan(2Ǿ) = 2τ/[σ(X) – σ(Y)].",
+                "c": "Inclination(Ǿ) is given by: <br> tan(2Ǿ) = 2τ/[σ(X) – σ(Y)].",
+                "d": "Inclination(Ǿ) is given by: <br> tan(2Ǿ) = 2τ/[σ(X) – σ(Y)]."
             },
             "correctAnswer": "a",
             "difficulty": "advanced"
