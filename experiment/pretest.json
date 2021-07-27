@@ -1,7 +1,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "A principal plane is a plane of ____",
+            "question": "1. A principal plane is a plane of ____ .",
             "answers": {
                 "a": "Only normal stress",
                 "b": "Only shear stress",
@@ -17,7 +17,7 @@
             "difficulty": "beginner"
         },
         {
-            "question": "Maximum shear stress is ____",
+            "question": "2. Maximum shear stress is ____ .",
             "answers": {
                 "a": "Average sum of principal stresses",
                 "b": "Average difference of principal stresses",
@@ -34,7 +34,7 @@
             "difficulty": "beginner"
         },
         {
-            "question": "A complementary shear stress is equal in magnitude and opposite in rotational tendency of an applied ____",
+            "question": "3. A complementary shear stress is equal in magnitude and opposite in rotational tendency of an applied ____ .",
             "answers": {
                 "a": "Tensile stress",
                 "b": "Compressive stress",

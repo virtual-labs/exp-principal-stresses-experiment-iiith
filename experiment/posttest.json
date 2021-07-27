@@ -1,7 +1,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "A body is subjected to stresses in XY plane with stresses of 60N/mm<sup>2</sup> and 80N/mm<sup>2</sup> acting along X and Y axes respectively. Also the shear stress acting is 20N/mm<sup>2</sup>. Find the minimum normal stress.",
+            "question": "1. A body is subjected to stresses in XY plane with stresses of 60N/mm<sup>2</sup> and 80N/mm<sup>2</sup> acting along X and Y axes respectively. Also the shear stress acting is 20N/mm<sup>2</sup>. Find the minimum normal stress.",
             "answers": {
                 "a": "45.4",
                 "b": "47.6",
@@ -15,7 +15,7 @@
             "difficulty": "advanced"
         },
         {
-            "question": "A body is subjected to stresses in XY plane with stresses of 60N/mm<sup>2</sup> and 80N/mm<sup>2</sup> acting along X and Y axes respectively. Also the shear stress acting is 10N/mm<sup>2</sup>. Find the inclination of the plane for which shear stress is maximum. ",
+            "question": "2. A body is subjected to stresses in XY plane with stresses of 60N/mm<sup>2</sup> and 80N/mm<sup>2</sup> acting along X and Y axes respectively. Also the shear stress acting is 10N/mm<sup>2</sup>. Find the inclination of the plane for which shear stress is maximum. ",
             "answers": {
                 "a": "45'",
                 "b": "30'",
