@@ -9,7 +9,10 @@
                 "d": "50.6"
             },
             "explanations": {
-                "b": "Minimum normal stress is given by: <br>  σ = [σ(X) + σ(Y)]/2 - √ ([σ(X)-σ(Y)]<sup>2</sup>/2<sup>2</sup> + τ<sup>2</sup>)"
+                "a": "Minimum normal stress is given by: <br>  σ = [σ(X) + σ(Y)]/2 - √ ([σ(X)-σ(Y)]<sup>2</sup>/2<sup>2</sup> + τ<sup>2</sup>)",
+                "b": "Minimum normal stress is given by: <br>  σ = [σ(X) + σ(Y)]/2 - √ ([σ(X)-σ(Y)]<sup>2</sup>/2<sup>2</sup> + τ<sup>2</sup>)",
+                "c": "Minimum normal stress is given by: <br>  σ = [σ(X) + σ(Y)]/2 - √ ([σ(X)-σ(Y)]<sup>2</sup>/2<sup>2</sup> + τ<sup>2</sup>)",
+                "d": "Minimum normal stress is given by: <br>  σ = [σ(X) + σ(Y)]/2 - √ ([σ(X)-σ(Y)]<sup>2</sup>/2<sup>2</sup> + τ<sup>2</sup>)"
             },
             "correctAnswer": "b",
             "difficulty": "advanced"

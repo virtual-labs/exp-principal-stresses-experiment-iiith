@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth / 3, window.innerHeight / 3);
 
-    renderer.domElement.style = "display: inline";
-    console.log(renderer.domElement);
+    renderer.domElement.style = "display: inline; width: window.innerWidth /3";
     document.body.appendChild(renderer.domElement);
 
     //Cube
@@ -36,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     renderer.render(scene, camera);
     const tableData = [
         { "σ'": "X", "X": "0", "Y": "0", "Z": "0" },
-        { "σ'": "X", "X": "0", "Y": "0", "Z": "0" },
-        { "σ'": "X", "X": "0", "Y": "0", "Z": "0" },
+        { "σ'": "Y", "X": "0", "Y": "0", "Z": "0" },
+        { "σ'": "Z", "X": "0", "Y": "0", "Z": "0" },
     ];
 
     generateTableHead(table, Object.keys(tableData[0]));
@@ -57,12 +56,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function matMult(matrix1, matrix2) {
         let result = [];
-        const matrixSize = 3;
-        for (let i = 0; i < matrixSize; i++) {
+        for (let i = 0; i < matrix1.length; i++) {
             result[i] = [];
-            for (let j = 0; j < matrixSize; j++) {
+            for (let j = 0; j < matrix1[i].length; j++) {
                 let sum = 0;
-                for (let k = 0; k < matrixSize; k++) {
+                for (let k = 0; k < matrix1[i].length; k++) {
                     sum = sum + matrix1[i][k] * matrix2[k][j];
                 }
                 result[i][j] = sum;
