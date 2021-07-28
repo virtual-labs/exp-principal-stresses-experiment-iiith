@@ -9,8 +9,8 @@
                 "d": "None of the above"
             },
             "explanations": {
-                "a": "A normal stress is a stress that occurs when a member is loaded by an axial force. The value of the normal force for any prismatic section is simply the force divided by the cross sectional area.",
-                "b": "Shear stress, force tending to cause deformation of a material by slippage along a plane or planes parallel to the imposed stress. The resultant shear is of great importance in nature, being intimately related to the downslope movement of earth materials and to earthquakes.",
+                "a": "A normal stress is a stress that occurs when a member is loaded by an axial force. The value of the normal force for any prismatic section is simply the force divided by the cross-sectional area.",
+                "b": "Shear stress is a force that tends to cause deformation of a material by slippage along a plane or planes parallel to the imposed stress. The resultant shear is of great importance in nature, being intimately related to the downslope movement of earth materials and to earthquakes.",
                 "c": "Bending stress is the normal stress that an object encounters when it is subjected to a large load at a particular point that causes the object to bend and become fatigued."
             },
             "correctAnswer": "a",
