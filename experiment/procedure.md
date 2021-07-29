@@ -1,5 +1,3 @@
-**Procedure**
-
 **Virtual Procedure**
 1. Initially all the parameters are set to 0.
 2. Change the values of stress along all the components.
