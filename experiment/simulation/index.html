@@ -22,56 +22,65 @@
     </div>
     <div class="columns is-centered">
         <div class="column has-text-centered is-narrow is-half">
-            <div class="columns is-centered">
-                <div class="column has-text-centered">
-                    <p>σ<sub>xx</sub> : <span id="demoXX">0</span></p>
-                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXX">
-                    <p>σ<sub>yx</sub> : <span id="demoYX">0</span></p>
-                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYX">
-                    <p>σ<sub>zx</sub> : <span id="demoZX">0</span></p>
-                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZX">
+            <div class="v-datalist-container">
+                <div class="v-datalist-title">Stress Parameters</div>
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <p>σ<sub>xx</sub> : <span id="demoXX">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXX">
+                        <p>σ<sub>yx</sub> : <span id="demoYX">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYX">
+                        <p>σ<sub>zx</sub> : <span id="demoZX">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZX">
+                    </div>
+                    <div class="column has-text-centered">
+                        <p>σ<sub>xy</sub> : <span id="demoXY">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXY">
+                        <p>σ<sub>yy</sub> : <span id="demoYY">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYY">
+                        <p>σ<sub>zy</sub> : <span id="demoZY">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZY">
+                    </div>
+                    <div class="column has-text-centered">
+                        <p>σ<sub>xz</sub> : <span id="demoXZ">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXZ">
+                        <p>σ<sub>yz</sub> : <span id="demoYZ">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYZ">
+                        <p>σ<sub>zz</sub> : <span id="demoZZ">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZZ">
+                    </div>
                 </div>
-                <div class="column has-text-centered">
-                    <p>σ<sub>xy</sub> : <span id="demoXY">0</span></p>
-                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXY">
-                    <p>σ<sub>yy</sub> : <span id="demoYY">0</span></p>
-                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYY">
-                    <p>σ<sub>zy</sub> : <span id="demoZY">0</span></p>
-                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZY">
-                </div>
-                <div class="column has-text-centered">
-                    <p>σ<sub>xz</sub> : <span id="demoXZ">0</span></p>
-                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXZ">
-                    <p>σ<sub>yz</sub> : <span id="demoYZ">0</span></p>
-                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYZ">
-                    <p>σ<sub>zz</sub> : <span id="demoZZ">0</span></p>
-                    <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZZ">
-                </div>
-            </div>
-            <div class="columns is-centered">
-                <div class="column has-text-centered">
-                    <p>Θ<sub>x</sub> : <span id="demoX">0</span></p>
-                    <input type="range" min="0" max="360" value="0" class="slider" id="myRangeX">
-                </div>
-                <div class="column has-text-centered">
-                    <p>Θ <sub>y</sub> : <span id="demoY">0</span></p>
-                    <input type="range" min="0" max="360" value="0" class="slider" id="myRangeY">
-                </div>
-                <div class="column has-text-centered">
-                    <p>Θ<sub>z</sub> : <span id="demoZ">0</span></p>
-                    <input type="range" min="0" max="360" value="0" class="slider" id="myRangeZ">
+                <div class="v-datalist-title">Orientation Parameters</div>
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <p>Θ<sub>x</sub> : <span id="demoX">0</span></p>
+                        <input type="range" min="0" max="360" value="0" class="slider" id="myRangeX">
+                    </div>
+                    <div class="column has-text-centered">
+                        <p>Θ <sub>y</sub> : <span id="demoY">0</span></p>
+                        <input type="range" min="0" max="360" value="0" class="slider" id="myRangeY">
+                    </div>
+                    <div class="column has-text-centered">
+                        <p>Θ<sub>z</sub> : <span id="demoZ">0</span></p>
+                        <input type="range" min="0" max="360" value="0" class="slider" id="myRangeZ">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="column has-text-centered" id="scene3d">
+        <div class="v-instruction-container mt-2">
+            <div class="v-instruction-title">Cube Orientation</div>
+            <div class="column has-text-centered" id="scene3d">
+            </div>
         </div>
         <div class="column has-text-centered is-narrow is-one-fourth">
-            <div class="v-table-wrap">
-                <table id="table" class="table is-bordered is-fullwidth">
-                </table>
+            <div class="v-datalist-container">
+                <div class="v-datalist-title">Observation (Principal Stress)</div>
+                <div class="v-table-wrap">
+                    <table id="table" class="table is-bordered is-fullwidth">
+                    </table>
+                </div>
             </div>
         </div>
-
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="js/data.json"></script>
