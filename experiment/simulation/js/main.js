@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         100, window.innerWidth / window.innerHeight,
         0.5, 1000
     );
-    camera.position.z = 400;
+    camera.position.z = 300;
     scene.translateX(0);
     scene.translateY(0);
     scene.translateZ(0);
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth / 3, window.innerHeight / 3);
 
-    renderer.domElement.style = "display: inline; width: 100%; border-style: solid;";
+    renderer.domElement.style = "display: inline; width: 100%";
     document.body.appendChild(renderer.domElement);
 
     //Cube
@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
     scene3d.appendChild(renderer.domElement);
     renderer.render(scene, camera);
     const tableData = [
-        { "σ'": "X", "X": "0", "Y": "0", "Z": "0" },
-        { "σ'": "Y", "X": "0", "Y": "0", "Z": "0" },
-        { "σ'": "Z", "X": "0", "Y": "0", "Z": "0" },
+        { "σ'": "X", "X": "0.000", "Y": "0.000", "Z": "0.000" },
+        { "σ'": "Y", "X": "0.000", "Y": "0.000", "Z": "0.000" },
+        { "σ'": "Z", "X": "0.000", "Y": "0.000", "Z": "0.000" },
     ];
 
     generateTableHead(table, Object.keys(tableData[0]));
@@ -122,9 +122,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         const tableData = [
-            { "σ'": "X", "X": principalSigma[0][0].toPrecision(10), "Y": principalSigma[0][1].toPrecision(10), "Z": principalSigma[0][2].toPrecision(10) },
-            { "σ'": "X", "X": principalSigma[1][0].toPrecision(10), "Y": principalSigma[1][1].toPrecision(10), "Z": principalSigma[1][2].toPrecision(10) },
-            { "σ'": "X", "X": principalSigma[2][0].toPrecision(10), "Y": principalSigma[2][1].toPrecision(10), "Z": principalSigma[2][2].toPrecision(10) },
+            { "σ'": "X", "X": principalSigma[0][0].toPrecision(4), "Y": principalSigma[0][1].toPrecision(4), "Z": principalSigma[0][2].toPrecision(4) },
+            { "σ'": "Y", "X": principalSigma[1][0].toPrecision(4), "Y": principalSigma[1][1].toPrecision(4), "Z": principalSigma[1][2].toPrecision(4) },
+            { "σ'": "Z", "X": principalSigma[2][0].toPrecision(4), "Y": principalSigma[2][1].toPrecision(4), "Z": principalSigma[2][2].toPrecision(4) },
         ];
         table.innerHTML = "";
         generateTableHead(table, Object.keys(tableData[0]));
