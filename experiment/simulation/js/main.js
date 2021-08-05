@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', function() {
         100, window.innerWidth / window.innerHeight,
         0.5, 1000
     );
-    camera.position.z = 300;
+    camera.position.z = 500;
     scene.translateX(0);
     scene.translateY(0);
     scene.translateZ(0);
 
     let renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth / 3, window.innerHeight / 3);
+    renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
 
     renderer.domElement.style = "display: inline; width: 100%";
     document.body.appendChild(renderer.domElement);
 
     //Cube
-    const geometry = new THREE.BoxGeometry(250, 250, 250);
+    const geometry = new THREE.BoxGeometry(450, 450, 450);
     const material = new THREE.MeshBasicMaterial({ color: data.colors.material, transparent: true, opacity: 0.0 });
     let cube = new THREE.Mesh(geometry, material);
     let edges = new THREE.EdgesHelper(cube, data.colors.cube);

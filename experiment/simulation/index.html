@@ -23,9 +23,9 @@
     <div class="columns is-centered">
         <div class="column has-text-centered is-narrow is-half">
             <div class="v-datalist-container">
-                <div class="v-datalist-title">Stress Parameters</div>
-                <div class="columns is-centered">
-                    <div class="column has-text-centered">
+                <div class="v-datalist-title mt-2">Stress Parameters</div>
+                <div class="columns is-centered mt-2">
+                    <div class="column has-text-centered mb-6">
                         <p>σ<sub>xx</sub> : <span id="demoXX">0</span></p>
                         <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXX">
                         <p>σ<sub>yx</sub> : <span id="demoYX">0</span></p>
@@ -50,8 +50,8 @@
                         <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZZ">
                     </div>
                 </div>
-                <div class="v-datalist-title">Orientation Parameters</div>
-                <div class="columns is-centered">
+                <div class="v-datalist-title mb-3">Orientation Parameters</div>
+                <div class="columns is-centered mb-3">
                     <div class="column has-text-centered">
                         <p>Θ<sub>x</sub> : <span id="demoX">0</span></p>
                         <input type="range" min="0" max="360" value="0" class="slider" id="myRangeX">
@@ -69,12 +69,12 @@
         </div>
         <div class="v-instruction-container mt-2">
             <div class="v-instruction-title">Cube Orientation</div>
-            <div class="column has-text-centered" id="scene3d">
+            <div class="column has-text-centered is-narrow" id="scene3d">
             </div>
         </div>
-        <div class="column has-text-centered is-narrow is-one-fourth">
+        <div class="column has-text-centered is-narrow">
             <div class="v-datalist-container">
-                <div class="v-datalist-title">Observation (Principal Stress)</div>
+                <div class="v-datalist-title mt-4 mb-4">Observation (Principal Stress)</div>
                 <div class="v-table-wrap">
                     <table id="table" class="table is-bordered is-fullwidth mb-6 mt-6">
                     </table>
