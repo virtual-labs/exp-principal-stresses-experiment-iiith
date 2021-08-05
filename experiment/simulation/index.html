@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css" />
+</head>
+
+<body>
+    <div class="column">
+        <div class="v-instruction-container">
+            <div class="v-instruction-title">Instructions</div>
+            <div class="v-instruction-text">
+                <ul>
+                    <li>Change the value of stress(σ) along different components with the sliders.</li>
+                    <li>Change the orientation(Θ) of the cube along all three directions using the sliders.</li>
+                    <li>Observe the values of Principal Stress(σ') obtained across all the components in the table provided.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="columns is-centered">
+        <div class="column has-text-centered is-narrow is-half">
+            <div class="v-datalist-container">
+                <div class="v-datalist-title mt-2">Stress Parameters</div>
+                <div class="columns is-centered mt-2">
+                    <div class="column has-text-centered mb-6">
+                        <p>σ<sub>xx</sub> : <span id="demoXX">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXX">
+                        <p>σ<sub>yx</sub> : <span id="demoYX">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYX">
+                        <p>σ<sub>zx</sub> : <span id="demoZX">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZX">
+                    </div>
+                    <div class="column has-text-centered">
+                        <p>σ<sub>xy</sub> : <span id="demoXY">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXY">
+                        <p>σ<sub>yy</sub> : <span id="demoYY">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYY">
+                        <p>σ<sub>zy</sub> : <span id="demoZY">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZY">
+                    </div>
+                    <div class="column has-text-centered">
+                        <p>σ<sub>xz</sub> : <span id="demoXZ">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeXZ">
+                        <p>σ<sub>yz</sub> : <span id="demoYZ">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeYZ">
+                        <p>σ<sub>zz</sub> : <span id="demoZZ">0</span></p>
+                        <input type="range" min="-50" max="50" value="0" class="slider" id="myRangeZZ">
+                    </div>
+                </div>
+                <div class="v-datalist-title mb-3">Orientation Parameters</div>
+                <div class="columns is-centered mb-3">
+                    <div class="column has-text-centered">
+                        <p>Θ<sub>x</sub> : <span id="demoX">0</span></p>
+                        <input type="range" min="0" max="360" value="0" class="slider" id="myRangeX">
+                    </div>
+                    <div class="column has-text-centered">
+                        <p>Θ <sub>y</sub> : <span id="demoY">0</span></p>
+                        <input type="range" min="0" max="360" value="0" class="slider" id="myRangeY">
+                    </div>
+                    <div class="column has-text-centered">
+                        <p>Θ<sub>z</sub> : <span id="demoZ">0</span></p>
+                        <input type="range" min="0" max="360" value="0" class="slider" id="myRangeZ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="v-instruction-container mt-2">
+            <div class="v-instruction-title">Cube Orientation</div>
+            <div class="column has-text-centered is-narrow" id="scene3d">
+            </div>
+        </div>
+        <div class="column has-text-centered is-narrow">
+            <div class="v-datalist-container">
+                <div class="v-datalist-title mt-4 mb-4">Observation (Principal Stress)</div>
+                <div class="v-table-wrap">
+                    <table id="table" class="table is-bordered is-fullwidth mb-6 mt-6">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/data.json"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
