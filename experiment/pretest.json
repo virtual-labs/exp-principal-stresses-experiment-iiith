@@ -1,0 +1,49 @@
+{
+    "version": 2.0,
+    "questions": [{
+            "question": "1. A principal plane is a plane of ____ .",
+            "answers": {
+                "a": "Only normal stress",
+                "b": "Only shear stress",
+                "c": "Only bending stress",
+                "d": "None of the above"
+            },
+            "explanations": {
+                "a": "A normal stress is a stress that occurs when a member is loaded by an axial force. The value of the normal force for any prismatic section is simply the force divided by the cross-sectional area.",
+                "b": "Shear stress is a force that tends to cause deformation of a material by slippage along a plane or planes parallel to the imposed stress. The resultant shear is of great importance in nature, being intimately related to the downslope movement of earth materials and to earthquakes.",
+                "c": "Bending stress is the normal stress that an object encounters when it is subjected to a large load at a particular point that causes the object to bend and become fatigued."
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. Maximum shear stress is ____ .",
+            "answers": {
+                "a": "Average sum of principal stresses",
+                "b": "Average difference of principal stresses",
+                "c": "Average sum as well as difference of principal stresses",
+                "d": "None of the above"
+            },
+            "explanations": {
+                "a": "Shear Stress is given by <br> (1/2)[((σ<sub>x</sub> - σ<sub>y</sub>)<sup>2</sup> + 4τ<sup>2</sup>)<sup>0.5</sup>] <br> For maximum shear stress, τ = 0, σ<sub>x</sub> = σ<sub>1</sub>, σ<sub>y</sub> = σ<sub>2</sub>",
+                "b": "Shear Stress is given by <br> (1/2)[((σ<sub>x</sub> - σ<sub>y</sub>)<sup>2</sup> + 4τ<sup>2</sup>)<sup>0.5</sup>] <br> For maximum shear stress, τ = 0, σ<sub>x</sub> = σ<sub>1</sub>, σ<sub>y</sub> = σ<sub>2</sub> <br> Hence  (1/2)[σ<sub>1</sub> - σ<sub>2</sub>]",
+                "c": "Shear Stress is given by <br> (1/2)[((σ<sub>x</sub> - σ<sub>y</sub>)<sup>2</sup> + 4τ<sup>2</sup>)<sup>0.5</sup>] <br> For maximum shear stress, τ = 0, σ<sub>x</sub> = σ<sub>1</sub>, σ<sub>y</sub> = σ<sub>2</sub>",
+                "d": "Shear Stress is given by <br> (1/2)[((σ<sub>x</sub> - σ<sub>y</sub>)<sup>2</sup> + 4τ<sup>2</sup>)<sup>0.5</sup>] <br> For maximum shear stress, τ = 0, σ<sub>x</sub> = σ<sub>1</sub>, σ<sub>y</sub> = σ<sub>2</sub>"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. A complementary shear stress is equal in magnitude and opposite in rotational tendency of an applied ____ .",
+            "answers": {
+                "a": "Tensile stress",
+                "b": "Compressive stress",
+                "c": "Shear stress",
+                "d": "None of the above"
+            },
+            "correctAnswer": "c",
+            "difficulty": "advanced"
+        }
+
+    ]
+}

@@ -1,0 +1,6 @@
+data = {
+    "colors": {
+        "material": "#ffffff",
+        "cube": "#000000",
+    }
+}
