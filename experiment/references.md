@@ -1,2 +1,1 @@
-- Engineering Mechanics of Solids, 2nd Edition
-  Egor P. Popov
+### Link your references in here
