@@ -1,0 +1,38 @@
+
+/home/runner/work/exp-principal-stresses-experiment-iiith/exp-principal-stresses-experiment-iiith/experiment/posttest.js
+  18:18  warning  'letter' is not defined  no-undef
+  22:73  warning  'letter' is not defined  no-undef
+  23:13  warning  'letter' is not defined  no-undef
+  24:37  warning  'letter' is not defined  no-undef
+
+/home/runner/work/exp-principal-stresses-experiment-iiith/exp-principal-stresses-experiment-iiith/experiment/pretest.js
+  18:19  warning  'letter' is not defined  no-undef
+  22:74  warning  'letter' is not defined  no-undef
+  23:14  warning  'letter' is not defined  no-undef
+  24:38  warning  'letter' is not defined  no-undef
+
+/home/runner/work/exp-principal-stresses-experiment-iiith/exp-principal-stresses-experiment-iiith/experiment/simulation/js/main.js
+    6:21  warning  'THREE' is not defined           no-undef
+    7:28  warning  'THREE' is not defined           no-undef
+    8:22  warning  'THREE' is not defined           no-undef
+   17:24  warning  'THREE' is not defined           no-undef
+   24:26  warning  'THREE' is not defined           no-undef
+   25:26  warning  'THREE' is not defined           no-undef
+   25:59  warning  'data' is not defined            no-undef
+   26:20  warning  'THREE' is not defined           no-undef
+   27:21  warning  'THREE' is not defined           no-undef
+   27:45  warning  'data' is not defined            no-undef
+   42:23  warning  'table' is not defined           no-undef
+   43:19  warning  'table' is not defined           no-undef
+   75:36  warning  'ind' is defined but never used  no-unused-vars
+   80:6   warning  Unnecessary semicolon            no-extra-semi
+   83:40  warning  'ind' is defined but never used  no-unused-vars
+   85:56  warning  'i' is defined but never used    no-unused-vars
+   90:6   warning  Unnecessary semicolon            no-extra-semi
+  129:9   warning  'table' is not defined           no-undef
+  130:27  warning  'table' is not defined           no-undef
+  131:23  warning  'table' is not defined           no-undef
+
+✖ 28 problems (0 errors, 28 warnings)
+  0 errors and 2 warnings potentially fixable with the `--fix` option.
+
