@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Principal stresses are the normal stresses acting on planes where the shear stress is ____.",
+      "answers": {
+        "a": "Maximum",
+        "b": "Zero",
+        "c": "Equal to the normal stress",
+        "d": "Constant"
+      },
+      "explanations": {
+        "a": "Incorrect. Maximum shear stress acts on different planes, not on the principal planes.",
+        "b": "Correct. Principal stresses act on planes where the shear stress is zero.",
+        "c": "Incorrect. Shear stress is not equal to the normal stress on principal planes.",
+        "d": "Incorrect. Principal planes are defined by zero shear stress, not constant shear stress."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Principal stress analysis is primarily used to determine the ____.",
+      "answers": {
+        "a": "Maximum and minimum normal stresses",
+        "b": "Temperature distribution",
+        "c": "Material density",
+        "d": "Coefficient of friction"
+      },
+      "explanations": {
+        "a": "Correct. Principal stress analysis identifies the maximum and minimum normal stresses acting at a point.",
+        "b": "Incorrect. Temperature distribution is unrelated to principal stress analysis.",
+        "c": "Incorrect. Material density is a material property and is not obtained through stress analysis.",
+        "d": "Incorrect. Coefficient of friction is unrelated to principal stress calculations."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. In a plane stress condition, principal stresses always act on ____ planes.",
+      "answers": {
+        "a": "Parallel",
+        "b": "Random",
+        "c": "Mutually perpendicular",
+        "d": "Curved"
+      },
+      "explanations": {
+        "a": "Incorrect. Principal planes are not parallel.",
+        "b": "Incorrect. Their orientation is determined by the state of stress.",
+        "c": "Correct. The two principal stresses act on mutually perpendicular planes.",
+        "d": "Incorrect. Principal stresses act on planar surfaces."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which quantity becomes zero on the principal planes?",
+      "answers": {
+        "a": "Normal stress",
+        "b": "Equivalent stress",
+        "c": "Von Mises stress",
+        "d": "Shear stress"
+      },
+      "explanations": {
+        "a": "Incorrect. Normal stresses become the principal stresses.",
+        "b": "Incorrect. Equivalent stress is not zero on the principal planes.",
+        "c": "Incorrect. Von Mises stress is calculated from the stress state and is generally not zero.",
+        "d": "Correct. Shear stress is zero on the principal planes."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which failure criterion is based on the maximum shear stress in a ductile material?",
+      "answers": {
+        "a": "Hooke's law",
+        "b": "Von Mises criterion",
+        "c": "Tresca criterion",
+        "d": "Bernoulli's principle"
+      },
+      "explanations": {
+        "a": "Incorrect. Hooke's law relates stress and strain within the elastic limit.",
+        "b": "Incorrect. Von Mises criterion is based on distortion energy.",
+        "c": "Correct. The Tresca criterion is based on the maximum shear stress.",
+        "d": "Incorrect. Bernoulli's principle is related to fluid flow."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. The Von Mises criterion predicts yielding based on the ____.",
+      "answers": {
+        "a": "Maximum normal stress",
+        "b": "Distortion energy",
+        "c": "Maximum displacement",
+        "d": "Thermal expansion"
+      },
+      "explanations": {
+        "a": "Incorrect. The Von Mises criterion is not based on maximum normal stress.",
+        "b": "Correct. It predicts yielding using the distortion energy in the material.",
+        "c": "Incorrect. Displacement is not used in the Von Mises criterion.",
+        "d": "Incorrect. Thermal expansion is unrelated to this failure criterion."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. A structural member is subjected to both normal and shear stresses. Determining the principal stresses primarily helps an engineer to ____.",
+      "answers": {
+        "a": "Predict yielding under combined loading",
+        "b": "Measure the surface roughness",
+        "c": "Determine the melting point",
+        "d": "Calculate the density"
+      },
+      "explanations": {
+        "a": "Correct. Principal stresses are used to assess the likelihood of yielding under combined loading.",
+        "b": "Incorrect. Surface roughness is unrelated to principal stress analysis.",
+        "c": "Incorrect. Melting point is a material property and is unrelated to stress transformation.",
+        "d": "Incorrect. Density is independent of principal stress analysis."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. For a plane stress condition, the principal stresses are obtained by transforming the stresses acting on ____.",
+      "answers": {
+        "a": "Only the x-axis",
+        "b": "Only the y-axis",
+        "c": "Any arbitrary plane through the point",
+        "d": "Only the principal planes"
+      },
+      "explanations": {
+        "a": "Incorrect. Stress transformation considers the complete state of stress.",
+        "b": "Incorrect. Both normal and shear stresses are considered.",
+        "c": "Correct. Principal stresses are determined by transforming the stresses acting on arbitrary planes through the point.",
+        "d": "Incorrect. The principal planes are the result of the transformation, not the starting point."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Which statement correctly describes the relationship between principal stresses and principal planes?",
+      "answers": {
+        "a": "Principal stresses always act parallel to the applied load.",
+        "b": "Principal planes always experience maximum shear stress.",
+        "c": "Principal stresses exist only in tensile loading.",
+        "d": "Principal stresses act on planes where the shear stress is zero."
+      },
+      "explanations": {
+        "a": "Incorrect. Principal stress directions depend on the state of stress, not simply on the applied load direction.",
+        "b": "Incorrect. Maximum shear stress acts on planes oriented 45° from the principal planes.",
+        "c": "Incorrect. Principal stresses exist for both tensile and compressive loading conditions.",
+        "d": "Correct. Principal stresses act on the principal planes, where the shear stress is zero."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    }
+  ]
+}

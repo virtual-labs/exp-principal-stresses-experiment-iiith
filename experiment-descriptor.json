@@ -2,6 +2,7 @@
   "unit-type": "lu",
   "label": "",
   "basedir": ".",
+  "LaTeXinMD": "true",
   "units": [
     {
       "unit-type": "aim"
@@ -21,6 +22,13 @@
       "content-type": "text"
     },
     {
+      "target": "pretest.html",
+      "source": "pretest.json",
+      "label": "Pretest",
+      "unit-type": "task",
+      "content-type": "assesment"
+    },
+    {
       "target": "procedure.html",
       "source": "procedure.md",
       "label": "Procedure",
@@ -35,6 +43,20 @@
       "content-type": "simulation"
     },
     {
+      "target": "observations.html",
+      "source": "observations.md",
+      "label": "Observations",
+      "unit-type": "task",
+      "content-type": "text"
+    },
+    {
+      "target": "posttest.html",
+      "source": "posttest.json",
+      "label": "Posttest",
+      "unit-type": "task",
+      "content-type": "assesment"
+    },
+    {
       "target": "references.html",
       "source": "references.md",
       "label": "References",
@@ -43,4 +65,3 @@
     }
   ]
 }
-
