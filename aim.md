@@ -1,0 +1,1 @@
+To determine the principal stresses and principal planes for a member subjected to plane stress, and to compare the yielding behaviour predicted by the Tresca and Von Mises failure criteria for ductile materials.
