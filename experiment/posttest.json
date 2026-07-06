@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Principal stresses are the normal stresses acting on planes where the shear stress is:",
+      "answers": {
+        "a": "Maximum",
+        "b": "Equal to the applied load",
+        "c": "Zero",
+        "d": "Equal to the normal stress"
+      },
+      "explanations": {
+        "a": "Incorrect. Maximum shear stress occurs on different planes from the principal planes.",
+        "b": "Incorrect. Principal stress is not defined by the magnitude of the applied load.",
+        "c": "Correct. Principal stresses act on planes where the shear stress becomes zero.",
+        "d": "Incorrect. Normal and shear stresses are different stress components."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which graphical method is commonly used to determine principal stresses and maximum shear stresses?",
+      "answers": {
+        "a": "Mohr's Circle",
+        "b": "Rankine Cycle",
+        "c": "S-N Curve",
+        "d": "Stress-Strain Curve"
+      },
+      "explanations": {
+        "a": "Correct. Mohr's Circle graphically represents stress transformation and helps determine principal stresses and maximum shear stress.",
+        "b": "Incorrect. Rankine Cycle is a thermodynamic cycle.",
+        "c": "Incorrect. An S-N curve is used in fatigue analysis.",
+        "d": "Incorrect. A stress-strain curve describes material behaviour under loading."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Principal stresses are always:",
+      "answers": {
+        "a": "Shear stresses",
+        "b": "Normal stresses",
+        "c": "Torsional stresses",
+        "d": "Bearing stresses"
+      },
+      "explanations": {
+        "a": "Incorrect. Principal stresses are not shear stresses.",
+        "b": "Correct. Principal stresses are the maximum and minimum normal stresses acting at a point.",
+        "c": "Incorrect. Torsional stress is produced due to twisting.",
+        "d": "Incorrect. Bearing stress acts at contact surfaces."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. At the principal planes, the value of shear stress is:",
+      "answers": {
+        "a": "Maximum",
+        "b": "Minimum but not zero",
+        "c": "Zero",
+        "d": "Equal to the average normal stress"
+      },
+      "explanations": {
+        "a": "Incorrect. Maximum shear stress occurs at planes oriented 45° from the principal planes.",
+        "b": "Incorrect. On principal planes, shear stress is exactly zero.",
+        "c": "Correct. Principal planes are defined as planes where shear stress vanishes.",
+        "d": "Incorrect. Average normal stress is unrelated to the shear stress on principal planes."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. According to the Tresca yield criterion, yielding begins when:",
+      "answers": {
+        "a": "Maximum principal stress reaches the yield stress",
+        "b": "Maximum shear stress reaches the shear yield strength",
+        "c": "Average stress becomes zero",
+        "d": "Normal stress equals shear stress"
+      },
+      "explanations": {
+        "a": "Incorrect. This corresponds to the maximum principal stress criterion, not Tresca.",
+        "b": "Correct. Tresca theory states that yielding begins when the maximum shear stress reaches the material's shear yield strength.",
+        "c": "Incorrect. Yielding is not determined by average stress.",
+        "d": "Incorrect. Equality of normal and shear stress is not a yielding criterion."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. The Von Mises yield criterion is based on:",
+      "answers": {
+        "a": "Distortion energy",
+        "b": "Maximum normal stress",
+        "c": "Maximum strain",
+        "d": "Maximum bending moment"
+      },
+      "explanations": {
+        "a": "Correct. The Von Mises criterion is based on the distortion energy stored in the material.",
+        "b": "Incorrect. Maximum normal stress is associated with Rankine's theory.",
+        "c": "Incorrect. Von Mises theory is not based solely on strain.",
+        "d": "Incorrect. Bending moment alone does not define the Von Mises criterion."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. A material is subjected to plane stresses of σₓ = 100 MPa, σᵧ = 0 MPa and τₓᵧ = 0 MPa. What are the principal stresses?",
+      "answers": {
+        "a": "100 MPa and 0 MPa",
+        "b": "50 MPa and 50 MPa",
+        "c": "100 MPa and 100 MPa",
+        "d": "50 MPa and 0 MPa"
+      },
+      "explanations": {
+        "a": "Correct. When shear stress is zero, the applied normal stresses themselves are the principal stresses.",
+        "b": "Incorrect. Principal stresses are not equal in this loading condition.",
+        "c": "Incorrect. Only one normal stress is applied.",
+        "d": "Incorrect. The principal stresses are not obtained by averaging the stresses."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Two principal stresses at a point are σ₁ = 80 MPa and σ₂ = 20 MPa. What is the maximum shear stress?",
+      "answers": {
+        "a": "20 MPa",
+        "b": "30 MPa",
+        "c": "40 MPa",
+        "d": "60 MPa"
+      },
+      "explanations": {
+        "a": "Incorrect. This is the smaller principal stress, not the maximum shear stress.",
+        "b": "Correct. Maximum shear stress equals half the difference between the principal stresses: (80 − 20)/2 = 30 MPa.",
+        "c": "Incorrect. This value does not satisfy the maximum shear stress equation.",
+        "d": "Incorrect. This is the full difference between the principal stresses, not half the difference."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Which yield criterion generally provides a more accurate prediction for ductile materials under multiaxial loading?",
+      "answers": {
+        "a": "Rankine criterion",
+        "b": "Maximum principal strain criterion",
+        "c": "Tresca criterion",
+        "d": "Von Mises criterion"
+      },
+      "explanations": {
+        "a": "Incorrect. Rankine theory is more suitable for brittle materials.",
+        "b": "Incorrect. This criterion is not commonly used for predicting yielding of ductile materials.",
+        "c": "Incorrect. Tresca is conservative but is generally less accurate than Von Mises for many ductile materials.",
+        "d": "Correct. The Von Mises criterion usually provides better agreement with experimental results for ductile materials."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    }
+  ]
+}
